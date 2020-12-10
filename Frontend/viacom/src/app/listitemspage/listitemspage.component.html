@@ -1,0 +1,22 @@
+<h1 class="display-4" style="text-align:center">List Items</h1>
+
+<table class="table table-hover table-dark">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">FirstName</th>
+        <th scope="col">LastName</th>
+        <th scope="col">City</th>
+        <th scope="col">Contact No.</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let userdetail of userdetails">
+            <th scope="row">1</th>
+            <td>{{userdetail.firstname}}</td>
+            <td>{{userdetail.lastname}}</td>
+            <td>{{userdetail.city}}</td>
+            <td>{{userdetail.contactno}}</td>
+        </tr>
+    </tbody>
+  </table>

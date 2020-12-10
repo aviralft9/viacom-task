@@ -1,0 +1,31 @@
+<h1 class="display-4" style="text-align:center">Add Items</h1>
+
+<form [formGroup]="formdata" class="form-inline" (ngSubmit)="submitUserDetials()">
+    <div class="form-row">
+        <label for="FirstName" class="col-sm-2 col-form-label col-form-label-sm">FirstName</label>
+        <div class="col">
+            <input type="text" class="form-control" id="FirstName" formControlName="FirstName" placeholder="FirstName" required>
+        </div>
+
+        <label for="LastName" class="col-sm-2 col-form-label col-form-label-sm">LastName</label>
+        <div class="col">
+            <input type="text" class="form-control" id="LastName" formControlName="LastName" placeholder="LastName">
+        </div>
+        <label for="ContactNo" class="col-sm-2 col-form-label col-form-label-sm">ContactNo</label>
+        <div class="col">
+            <input type="text" class="form-control" id="ContactNo" formControlName="ContactNo" placeholder="ContactNo">
+        </div>
+        <label for="City" class="col-sm-2 col-form-label col-form-label-sm">City</label>
+        <div class="col">
+            <input type="text" class="form-control" id="City" formControlName="City" placeholder="City">
+        </div>
+        <div class="col" class="col-sm-2">
+        </div>
+        <div class="col">
+            <input type="submit" value="Submit Details" [disabled]="!formdata.valid" class="btn btn-primary">
+        </div>
+    </div>
+    
+    
+</form>
+<!--<button type="button" class="btn btn-primary">Add Row</button>-->
